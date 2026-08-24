@@ -24,3 +24,8 @@ htmlcov/
 Thumbs.db
 .vscode/
 .idea/
+
+*.pdf
+*.txt
+__pycache__/
+*.pyc
