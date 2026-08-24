@@ -1,0 +1,1850 @@
+{
+  "dataset_name": "Synthetic Dispute Benchmark Dataset (Phase 2)",
+  "author": "Akshay Purohit (202512033)",
+  "total_cases": 56,
+  "version": "1.0",
+  "created_date": "2026-08-24",
+  "cases": [
+    {
+      "case_id": "CAS-202609-001",
+      "dispute_category_id": "CAT-01",
+      "dispute_category_name": "Item Not Received",
+      "amount": 200.0,
+      "currency": "INR",
+      "ground_truth_resolution": "CARD_MEMBER_FAVOUR",
+      "expected_confidence_target": 85.0,
+      "evidence_items": [
+        {
+          "evidence_id": "EV-01",
+          "evidence_type": "Transaction Record",
+          "status": "Present",
+          "quality_score": 0.95,
+          "favours": "NEUTRAL"
+        },
+        {
+          "evidence_id": "EV-03",
+          "evidence_type": "Primary Evidence",
+          "status": "Present",
+          "quality_score": 0.95,
+          "favours": "CARD_MEMBER"
+        },
+        {
+          "evidence_id": "EV-09",
+          "evidence_type": "Dispute Reason Statement",
+          "status": "Present",
+          "quality_score": 0.9,
+          "favours": "CARD_MEMBER"
+        }
+      ]
+    },
+    {
+      "case_id": "CAS-202609-002",
+      "dispute_category_id": "CAT-01",
+      "dispute_category_name": "Item Not Received",
+      "amount": 200.0,
+      "currency": "INR",
+      "ground_truth_resolution": "MERCHANT_FAVOUR",
+      "expected_confidence_target": 88.0,
+      "evidence_items": [
+        {
+          "evidence_id": "EV-01",
+          "evidence_type": "Transaction Record",
+          "status": "Present",
+          "quality_score": 0.95,
+          "favours": "NEUTRAL"
+        },
+        {
+          "evidence_id": "EV-03",
+          "evidence_type": "Primary Evidence",
+          "status": "Present",
+          "quality_score": 0.95,
+          "favours": "MERCHANT"
+        },
+        {
+          "evidence_id": "EV-02",
+          "evidence_type": "Merchant Receipt",
+          "status": "Present",
+          "quality_score": 0.9,
+          "favours": "MERCHANT"
+        }
+      ]
+    },
+    {
+      "case_id": "CAS-202609-003",
+      "dispute_category_id": "CAT-01",
+      "dispute_category_name": "Item Not Received",
+      "amount": 500.0,
+      "currency": "INR",
+      "ground_truth_resolution": "ESCALATE",
+      "expected_confidence_target": 40.0,
+      "evidence_items": [
+        {
+          "evidence_id": "EV-01",
+          "evidence_type": "Transaction Record",
+          "status": "Present",
+          "quality_score": 0.5,
+          "favours": "NEUTRAL"
+        },
+        {
+          "evidence_id": "EV-03",
+          "evidence_type": "Primary Evidence",
+          "status": "Missing",
+          "quality_score": 0.0,
+          "favours": "NEUTRAL"
+        },
+        {
+          "evidence_id": "EV-09",
+          "evidence_type": "Dispute Reason Statement",
+          "status": "Present",
+          "quality_score": 0.4,
+          "favours": "CARD_MEMBER"
+        }
+      ]
+    },
+    {
+      "case_id": "CAS-202609-004",
+      "dispute_category_id": "CAT-01",
+      "dispute_category_name": "Item Not Received",
+      "amount": 120.0,
+      "currency": "INR",
+      "ground_truth_resolution": "CARD_MEMBER_FAVOUR",
+      "expected_confidence_target": 75.0,
+      "evidence_items": [
+        {
+          "evidence_id": "EV-01",
+          "evidence_type": "Transaction Record",
+          "status": "Present",
+          "quality_score": 0.9,
+          "favours": "NEUTRAL"
+        },
+        {
+          "evidence_id": "EV-03",
+          "evidence_type": "Primary Evidence",
+          "status": "Present",
+          "quality_score": 0.85,
+          "favours": "CARD_MEMBER"
+        },
+        {
+          "evidence_id": "EV-05",
+          "evidence_type": "CM Communication Log",
+          "status": "Present",
+          "quality_score": 0.8,
+          "favours": "CARD_MEMBER"
+        }
+      ]
+    },
+    {
+      "case_id": "CAS-202609-005",
+      "dispute_category_id": "CAT-01",
+      "dispute_category_name": "Item Not Received",
+      "amount": 300.0,
+      "currency": "INR",
+      "ground_truth_resolution": "MERCHANT_FAVOUR",
+      "expected_confidence_target": 78.0,
+      "evidence_items": [
+        {
+          "evidence_id": "EV-01",
+          "evidence_type": "Transaction Record",
+          "status": "Present",
+          "quality_score": 0.92,
+          "favours": "NEUTRAL"
+        },
+        {
+          "evidence_id": "EV-03",
+          "evidence_type": "Primary Evidence",
+          "status": "Present",
+          "quality_score": 0.88,
+          "favours": "MERCHANT"
+        },
+        {
+          "evidence_id": "EV-04",
+          "evidence_type": "Merchant Comm Log",
+          "status": "Present",
+          "quality_score": 0.85,
+          "favours": "MERCHANT"
+        }
+      ]
+    },
+    {
+      "case_id": "CAS-202609-006",
+      "dispute_category_id": "CAT-01",
+      "dispute_category_name": "Item Not Received",
+      "amount": 450.0,
+      "currency": "INR",
+      "ground_truth_resolution": "CARD_MEMBER_FAVOUR",
+      "expected_confidence_target": 92.0,
+      "evidence_items": [
+        {
+          "evidence_id": "EV-01",
+          "evidence_type": "Transaction Record",
+          "status": "Present",
+          "quality_score": 0.98,
+          "favours": "NEUTRAL"
+        },
+        {
+          "evidence_id": "EV-03",
+          "evidence_type": "Primary Evidence",
+          "status": "Present",
+          "quality_score": 0.95,
+          "favours": "CARD_MEMBER"
+        },
+        {
+          "evidence_id": "EV-09",
+          "evidence_type": "Dispute Reason Statement",
+          "status": "Present",
+          "quality_score": 0.95,
+          "favours": "CARD_MEMBER"
+        },
+        {
+          "evidence_id": "EV-05",
+          "evidence_type": "CM Communication Log",
+          "status": "Present",
+          "quality_score": 0.9,
+          "favours": "CARD_MEMBER"
+        }
+      ]
+    },
+    {
+      "case_id": "CAS-202609-007",
+      "dispute_category_id": "CAT-01",
+      "dispute_category_name": "Item Not Received",
+      "amount": 800.0,
+      "currency": "INR",
+      "ground_truth_resolution": "MERCHANT_FAVOUR",
+      "expected_confidence_target": 94.0,
+      "evidence_items": [
+        {
+          "evidence_id": "EV-01",
+          "evidence_type": "Transaction Record",
+          "status": "Present",
+          "quality_score": 0.99,
+          "favours": "NEUTRAL"
+        },
+        {
+          "evidence_id": "EV-03",
+          "evidence_type": "Primary Evidence",
+          "status": "Present",
+          "quality_score": 0.98,
+          "favours": "MERCHANT"
+        },
+        {
+          "evidence_id": "EV-02",
+          "evidence_type": "Merchant Receipt",
+          "status": "Present",
+          "quality_score": 0.95,
+          "favours": "MERCHANT"
+        },
+        {
+          "evidence_id": "EV-04",
+          "evidence_type": "Merchant Comm Log",
+          "status": "Present",
+          "quality_score": 0.9,
+          "favours": "MERCHANT"
+        }
+      ]
+    },
+    {
+      "case_id": "CAS-202609-008",
+      "dispute_category_id": "CAT-01",
+      "dispute_category_name": "Item Not Received",
+      "amount": 150.0,
+      "currency": "INR",
+      "ground_truth_resolution": "ESCALATE",
+      "expected_confidence_target": 45.0,
+      "evidence_items": [
+        {
+          "evidence_id": "EV-01",
+          "evidence_type": "Transaction Record",
+          "status": "Present",
+          "quality_score": 0.4,
+          "favours": "NEUTRAL"
+        },
+        {
+          "evidence_id": "EV-03",
+          "evidence_type": "Primary Evidence",
+          "status": "Missing",
+          "quality_score": 0.0,
+          "favours": "NEUTRAL"
+        }
+      ]
+    },
+    {
+      "case_id": "CAS-202609-009",
+      "dispute_category_id": "CAT-02",
+      "dispute_category_name": "Item Not as Described",
+      "amount": 200.0,
+      "currency": "INR",
+      "ground_truth_resolution": "CARD_MEMBER_FAVOUR",
+      "expected_confidence_target": 85.0,
+      "evidence_items": [
+        {
+          "evidence_id": "EV-01",
+          "evidence_type": "Transaction Record",
+          "status": "Present",
+          "quality_score": 0.95,
+          "favours": "NEUTRAL"
+        },
+        {
+          "evidence_id": "EV-06",
+          "evidence_type": "Primary Evidence",
+          "status": "Present",
+          "quality_score": 0.95,
+          "favours": "CARD_MEMBER"
+        },
+        {
+          "evidence_id": "EV-09",
+          "evidence_type": "Dispute Reason Statement",
+          "status": "Present",
+          "quality_score": 0.9,
+          "favours": "CARD_MEMBER"
+        }
+      ]
+    },
+    {
+      "case_id": "CAS-202609-010",
+      "dispute_category_id": "CAT-02",
+      "dispute_category_name": "Item Not as Described",
+      "amount": 200.0,
+      "currency": "INR",
+      "ground_truth_resolution": "MERCHANT_FAVOUR",
+      "expected_confidence_target": 88.0,
+      "evidence_items": [
+        {
+          "evidence_id": "EV-01",
+          "evidence_type": "Transaction Record",
+          "status": "Present",
+          "quality_score": 0.95,
+          "favours": "NEUTRAL"
+        },
+        {
+          "evidence_id": "EV-06",
+          "evidence_type": "Primary Evidence",
+          "status": "Present",
+          "quality_score": 0.95,
+          "favours": "MERCHANT"
+        },
+        {
+          "evidence_id": "EV-02",
+          "evidence_type": "Merchant Receipt",
+          "status": "Present",
+          "quality_score": 0.9,
+          "favours": "MERCHANT"
+        }
+      ]
+    },
+    {
+      "case_id": "CAS-202609-011",
+      "dispute_category_id": "CAT-02",
+      "dispute_category_name": "Item Not as Described",
+      "amount": 500.0,
+      "currency": "INR",
+      "ground_truth_resolution": "ESCALATE",
+      "expected_confidence_target": 40.0,
+      "evidence_items": [
+        {
+          "evidence_id": "EV-01",
+          "evidence_type": "Transaction Record",
+          "status": "Present",
+          "quality_score": 0.5,
+          "favours": "NEUTRAL"
+        },
+        {
+          "evidence_id": "EV-06",
+          "evidence_type": "Primary Evidence",
+          "status": "Missing",
+          "quality_score": 0.0,
+          "favours": "NEUTRAL"
+        },
+        {
+          "evidence_id": "EV-09",
+          "evidence_type": "Dispute Reason Statement",
+          "status": "Present",
+          "quality_score": 0.4,
+          "favours": "CARD_MEMBER"
+        }
+      ]
+    },
+    {
+      "case_id": "CAS-202609-012",
+      "dispute_category_id": "CAT-02",
+      "dispute_category_name": "Item Not as Described",
+      "amount": 120.0,
+      "currency": "INR",
+      "ground_truth_resolution": "CARD_MEMBER_FAVOUR",
+      "expected_confidence_target": 75.0,
+      "evidence_items": [
+        {
+          "evidence_id": "EV-01",
+          "evidence_type": "Transaction Record",
+          "status": "Present",
+          "quality_score": 0.9,
+          "favours": "NEUTRAL"
+        },
+        {
+          "evidence_id": "EV-06",
+          "evidence_type": "Primary Evidence",
+          "status": "Present",
+          "quality_score": 0.85,
+          "favours": "CARD_MEMBER"
+        },
+        {
+          "evidence_id": "EV-05",
+          "evidence_type": "CM Communication Log",
+          "status": "Present",
+          "quality_score": 0.8,
+          "favours": "CARD_MEMBER"
+        }
+      ]
+    },
+    {
+      "case_id": "CAS-202609-013",
+      "dispute_category_id": "CAT-02",
+      "dispute_category_name": "Item Not as Described",
+      "amount": 300.0,
+      "currency": "INR",
+      "ground_truth_resolution": "MERCHANT_FAVOUR",
+      "expected_confidence_target": 78.0,
+      "evidence_items": [
+        {
+          "evidence_id": "EV-01",
+          "evidence_type": "Transaction Record",
+          "status": "Present",
+          "quality_score": 0.92,
+          "favours": "NEUTRAL"
+        },
+        {
+          "evidence_id": "EV-06",
+          "evidence_type": "Primary Evidence",
+          "status": "Present",
+          "quality_score": 0.88,
+          "favours": "MERCHANT"
+        },
+        {
+          "evidence_id": "EV-04",
+          "evidence_type": "Merchant Comm Log",
+          "status": "Present",
+          "quality_score": 0.85,
+          "favours": "MERCHANT"
+        }
+      ]
+    },
+    {
+      "case_id": "CAS-202609-014",
+      "dispute_category_id": "CAT-02",
+      "dispute_category_name": "Item Not as Described",
+      "amount": 450.0,
+      "currency": "INR",
+      "ground_truth_resolution": "CARD_MEMBER_FAVOUR",
+      "expected_confidence_target": 92.0,
+      "evidence_items": [
+        {
+          "evidence_id": "EV-01",
+          "evidence_type": "Transaction Record",
+          "status": "Present",
+          "quality_score": 0.98,
+          "favours": "NEUTRAL"
+        },
+        {
+          "evidence_id": "EV-06",
+          "evidence_type": "Primary Evidence",
+          "status": "Present",
+          "quality_score": 0.95,
+          "favours": "CARD_MEMBER"
+        },
+        {
+          "evidence_id": "EV-09",
+          "evidence_type": "Dispute Reason Statement",
+          "status": "Present",
+          "quality_score": 0.95,
+          "favours": "CARD_MEMBER"
+        },
+        {
+          "evidence_id": "EV-05",
+          "evidence_type": "CM Communication Log",
+          "status": "Present",
+          "quality_score": 0.9,
+          "favours": "CARD_MEMBER"
+        }
+      ]
+    },
+    {
+      "case_id": "CAS-202609-015",
+      "dispute_category_id": "CAT-02",
+      "dispute_category_name": "Item Not as Described",
+      "amount": 800.0,
+      "currency": "INR",
+      "ground_truth_resolution": "MERCHANT_FAVOUR",
+      "expected_confidence_target": 94.0,
+      "evidence_items": [
+        {
+          "evidence_id": "EV-01",
+          "evidence_type": "Transaction Record",
+          "status": "Present",
+          "quality_score": 0.99,
+          "favours": "NEUTRAL"
+        },
+        {
+          "evidence_id": "EV-06",
+          "evidence_type": "Primary Evidence",
+          "status": "Present",
+          "quality_score": 0.98,
+          "favours": "MERCHANT"
+        },
+        {
+          "evidence_id": "EV-02",
+          "evidence_type": "Merchant Receipt",
+          "status": "Present",
+          "quality_score": 0.95,
+          "favours": "MERCHANT"
+        },
+        {
+          "evidence_id": "EV-04",
+          "evidence_type": "Merchant Comm Log",
+          "status": "Present",
+          "quality_score": 0.9,
+          "favours": "MERCHANT"
+        }
+      ]
+    },
+    {
+      "case_id": "CAS-202609-016",
+      "dispute_category_id": "CAT-02",
+      "dispute_category_name": "Item Not as Described",
+      "amount": 150.0,
+      "currency": "INR",
+      "ground_truth_resolution": "ESCALATE",
+      "expected_confidence_target": 45.0,
+      "evidence_items": [
+        {
+          "evidence_id": "EV-01",
+          "evidence_type": "Transaction Record",
+          "status": "Present",
+          "quality_score": 0.4,
+          "favours": "NEUTRAL"
+        },
+        {
+          "evidence_id": "EV-06",
+          "evidence_type": "Primary Evidence",
+          "status": "Missing",
+          "quality_score": 0.0,
+          "favours": "NEUTRAL"
+        }
+      ]
+    },
+    {
+      "case_id": "CAS-202609-017",
+      "dispute_category_id": "CAT-03",
+      "dispute_category_name": "Unauthorized Transaction",
+      "amount": 200.0,
+      "currency": "INR",
+      "ground_truth_resolution": "CARD_MEMBER_FAVOUR",
+      "expected_confidence_target": 85.0,
+      "evidence_items": [
+        {
+          "evidence_id": "EV-01",
+          "evidence_type": "Transaction Record",
+          "status": "Present",
+          "quality_score": 0.95,
+          "favours": "NEUTRAL"
+        },
+        {
+          "evidence_id": "EV-08",
+          "evidence_type": "Primary Evidence",
+          "status": "Present",
+          "quality_score": 0.95,
+          "favours": "CARD_MEMBER"
+        },
+        {
+          "evidence_id": "EV-09",
+          "evidence_type": "Dispute Reason Statement",
+          "status": "Present",
+          "quality_score": 0.9,
+          "favours": "CARD_MEMBER"
+        }
+      ]
+    },
+    {
+      "case_id": "CAS-202609-018",
+      "dispute_category_id": "CAT-03",
+      "dispute_category_name": "Unauthorized Transaction",
+      "amount": 200.0,
+      "currency": "INR",
+      "ground_truth_resolution": "MERCHANT_FAVOUR",
+      "expected_confidence_target": 88.0,
+      "evidence_items": [
+        {
+          "evidence_id": "EV-01",
+          "evidence_type": "Transaction Record",
+          "status": "Present",
+          "quality_score": 0.95,
+          "favours": "NEUTRAL"
+        },
+        {
+          "evidence_id": "EV-08",
+          "evidence_type": "Primary Evidence",
+          "status": "Present",
+          "quality_score": 0.95,
+          "favours": "MERCHANT"
+        },
+        {
+          "evidence_id": "EV-02",
+          "evidence_type": "Merchant Receipt",
+          "status": "Present",
+          "quality_score": 0.9,
+          "favours": "MERCHANT"
+        }
+      ]
+    },
+    {
+      "case_id": "CAS-202609-019",
+      "dispute_category_id": "CAT-03",
+      "dispute_category_name": "Unauthorized Transaction",
+      "amount": 500.0,
+      "currency": "INR",
+      "ground_truth_resolution": "ESCALATE",
+      "expected_confidence_target": 40.0,
+      "evidence_items": [
+        {
+          "evidence_id": "EV-01",
+          "evidence_type": "Transaction Record",
+          "status": "Present",
+          "quality_score": 0.5,
+          "favours": "NEUTRAL"
+        },
+        {
+          "evidence_id": "EV-08",
+          "evidence_type": "Primary Evidence",
+          "status": "Missing",
+          "quality_score": 0.0,
+          "favours": "NEUTRAL"
+        },
+        {
+          "evidence_id": "EV-09",
+          "evidence_type": "Dispute Reason Statement",
+          "status": "Present",
+          "quality_score": 0.4,
+          "favours": "CARD_MEMBER"
+        }
+      ]
+    },
+    {
+      "case_id": "CAS-202609-020",
+      "dispute_category_id": "CAT-03",
+      "dispute_category_name": "Unauthorized Transaction",
+      "amount": 120.0,
+      "currency": "INR",
+      "ground_truth_resolution": "CARD_MEMBER_FAVOUR",
+      "expected_confidence_target": 75.0,
+      "evidence_items": [
+        {
+          "evidence_id": "EV-01",
+          "evidence_type": "Transaction Record",
+          "status": "Present",
+          "quality_score": 0.9,
+          "favours": "NEUTRAL"
+        },
+        {
+          "evidence_id": "EV-08",
+          "evidence_type": "Primary Evidence",
+          "status": "Present",
+          "quality_score": 0.85,
+          "favours": "CARD_MEMBER"
+        },
+        {
+          "evidence_id": "EV-05",
+          "evidence_type": "CM Communication Log",
+          "status": "Present",
+          "quality_score": 0.8,
+          "favours": "CARD_MEMBER"
+        }
+      ]
+    },
+    {
+      "case_id": "CAS-202609-021",
+      "dispute_category_id": "CAT-03",
+      "dispute_category_name": "Unauthorized Transaction",
+      "amount": 300.0,
+      "currency": "INR",
+      "ground_truth_resolution": "MERCHANT_FAVOUR",
+      "expected_confidence_target": 78.0,
+      "evidence_items": [
+        {
+          "evidence_id": "EV-01",
+          "evidence_type": "Transaction Record",
+          "status": "Present",
+          "quality_score": 0.92,
+          "favours": "NEUTRAL"
+        },
+        {
+          "evidence_id": "EV-08",
+          "evidence_type": "Primary Evidence",
+          "status": "Present",
+          "quality_score": 0.88,
+          "favours": "MERCHANT"
+        },
+        {
+          "evidence_id": "EV-04",
+          "evidence_type": "Merchant Comm Log",
+          "status": "Present",
+          "quality_score": 0.85,
+          "favours": "MERCHANT"
+        }
+      ]
+    },
+    {
+      "case_id": "CAS-202609-022",
+      "dispute_category_id": "CAT-03",
+      "dispute_category_name": "Unauthorized Transaction",
+      "amount": 450.0,
+      "currency": "INR",
+      "ground_truth_resolution": "CARD_MEMBER_FAVOUR",
+      "expected_confidence_target": 92.0,
+      "evidence_items": [
+        {
+          "evidence_id": "EV-01",
+          "evidence_type": "Transaction Record",
+          "status": "Present",
+          "quality_score": 0.98,
+          "favours": "NEUTRAL"
+        },
+        {
+          "evidence_id": "EV-08",
+          "evidence_type": "Primary Evidence",
+          "status": "Present",
+          "quality_score": 0.95,
+          "favours": "CARD_MEMBER"
+        },
+        {
+          "evidence_id": "EV-09",
+          "evidence_type": "Dispute Reason Statement",
+          "status": "Present",
+          "quality_score": 0.95,
+          "favours": "CARD_MEMBER"
+        },
+        {
+          "evidence_id": "EV-05",
+          "evidence_type": "CM Communication Log",
+          "status": "Present",
+          "quality_score": 0.9,
+          "favours": "CARD_MEMBER"
+        }
+      ]
+    },
+    {
+      "case_id": "CAS-202609-023",
+      "dispute_category_id": "CAT-03",
+      "dispute_category_name": "Unauthorized Transaction",
+      "amount": 800.0,
+      "currency": "INR",
+      "ground_truth_resolution": "MERCHANT_FAVOUR",
+      "expected_confidence_target": 94.0,
+      "evidence_items": [
+        {
+          "evidence_id": "EV-01",
+          "evidence_type": "Transaction Record",
+          "status": "Present",
+          "quality_score": 0.99,
+          "favours": "NEUTRAL"
+        },
+        {
+          "evidence_id": "EV-08",
+          "evidence_type": "Primary Evidence",
+          "status": "Present",
+          "quality_score": 0.98,
+          "favours": "MERCHANT"
+        },
+        {
+          "evidence_id": "EV-02",
+          "evidence_type": "Merchant Receipt",
+          "status": "Present",
+          "quality_score": 0.95,
+          "favours": "MERCHANT"
+        },
+        {
+          "evidence_id": "EV-04",
+          "evidence_type": "Merchant Comm Log",
+          "status": "Present",
+          "quality_score": 0.9,
+          "favours": "MERCHANT"
+        }
+      ]
+    },
+    {
+      "case_id": "CAS-202609-024",
+      "dispute_category_id": "CAT-03",
+      "dispute_category_name": "Unauthorized Transaction",
+      "amount": 150.0,
+      "currency": "INR",
+      "ground_truth_resolution": "ESCALATE",
+      "expected_confidence_target": 45.0,
+      "evidence_items": [
+        {
+          "evidence_id": "EV-01",
+          "evidence_type": "Transaction Record",
+          "status": "Present",
+          "quality_score": 0.4,
+          "favours": "NEUTRAL"
+        },
+        {
+          "evidence_id": "EV-08",
+          "evidence_type": "Primary Evidence",
+          "status": "Missing",
+          "quality_score": 0.0,
+          "favours": "NEUTRAL"
+        }
+      ]
+    },
+    {
+      "case_id": "CAS-202609-025",
+      "dispute_category_id": "CAT-04",
+      "dispute_category_name": "Duplicate Charge",
+      "amount": 200.0,
+      "currency": "INR",
+      "ground_truth_resolution": "CARD_MEMBER_FAVOUR",
+      "expected_confidence_target": 85.0,
+      "evidence_items": [
+        {
+          "evidence_id": "EV-01",
+          "evidence_type": "Transaction Record",
+          "status": "Present",
+          "quality_score": 0.95,
+          "favours": "NEUTRAL"
+        },
+        {
+          "evidence_id": "EV-01_DUP",
+          "evidence_type": "Primary Evidence",
+          "status": "Present",
+          "quality_score": 0.95,
+          "favours": "CARD_MEMBER"
+        },
+        {
+          "evidence_id": "EV-09",
+          "evidence_type": "Dispute Reason Statement",
+          "status": "Present",
+          "quality_score": 0.9,
+          "favours": "CARD_MEMBER"
+        }
+      ]
+    },
+    {
+      "case_id": "CAS-202609-026",
+      "dispute_category_id": "CAT-04",
+      "dispute_category_name": "Duplicate Charge",
+      "amount": 200.0,
+      "currency": "INR",
+      "ground_truth_resolution": "MERCHANT_FAVOUR",
+      "expected_confidence_target": 88.0,
+      "evidence_items": [
+        {
+          "evidence_id": "EV-01",
+          "evidence_type": "Transaction Record",
+          "status": "Present",
+          "quality_score": 0.95,
+          "favours": "NEUTRAL"
+        },
+        {
+          "evidence_id": "EV-01_DUP",
+          "evidence_type": "Primary Evidence",
+          "status": "Present",
+          "quality_score": 0.95,
+          "favours": "MERCHANT"
+        },
+        {
+          "evidence_id": "EV-02",
+          "evidence_type": "Merchant Receipt",
+          "status": "Present",
+          "quality_score": 0.9,
+          "favours": "MERCHANT"
+        }
+      ]
+    },
+    {
+      "case_id": "CAS-202609-027",
+      "dispute_category_id": "CAT-04",
+      "dispute_category_name": "Duplicate Charge",
+      "amount": 500.0,
+      "currency": "INR",
+      "ground_truth_resolution": "ESCALATE",
+      "expected_confidence_target": 40.0,
+      "evidence_items": [
+        {
+          "evidence_id": "EV-01",
+          "evidence_type": "Transaction Record",
+          "status": "Present",
+          "quality_score": 0.5,
+          "favours": "NEUTRAL"
+        },
+        {
+          "evidence_id": "EV-01_DUP",
+          "evidence_type": "Primary Evidence",
+          "status": "Missing",
+          "quality_score": 0.0,
+          "favours": "NEUTRAL"
+        },
+        {
+          "evidence_id": "EV-09",
+          "evidence_type": "Dispute Reason Statement",
+          "status": "Present",
+          "quality_score": 0.4,
+          "favours": "CARD_MEMBER"
+        }
+      ]
+    },
+    {
+      "case_id": "CAS-202609-028",
+      "dispute_category_id": "CAT-04",
+      "dispute_category_name": "Duplicate Charge",
+      "amount": 120.0,
+      "currency": "INR",
+      "ground_truth_resolution": "CARD_MEMBER_FAVOUR",
+      "expected_confidence_target": 75.0,
+      "evidence_items": [
+        {
+          "evidence_id": "EV-01",
+          "evidence_type": "Transaction Record",
+          "status": "Present",
+          "quality_score": 0.9,
+          "favours": "NEUTRAL"
+        },
+        {
+          "evidence_id": "EV-01_DUP",
+          "evidence_type": "Primary Evidence",
+          "status": "Present",
+          "quality_score": 0.85,
+          "favours": "CARD_MEMBER"
+        },
+        {
+          "evidence_id": "EV-05",
+          "evidence_type": "CM Communication Log",
+          "status": "Present",
+          "quality_score": 0.8,
+          "favours": "CARD_MEMBER"
+        }
+      ]
+    },
+    {
+      "case_id": "CAS-202609-029",
+      "dispute_category_id": "CAT-04",
+      "dispute_category_name": "Duplicate Charge",
+      "amount": 300.0,
+      "currency": "INR",
+      "ground_truth_resolution": "MERCHANT_FAVOUR",
+      "expected_confidence_target": 78.0,
+      "evidence_items": [
+        {
+          "evidence_id": "EV-01",
+          "evidence_type": "Transaction Record",
+          "status": "Present",
+          "quality_score": 0.92,
+          "favours": "NEUTRAL"
+        },
+        {
+          "evidence_id": "EV-01_DUP",
+          "evidence_type": "Primary Evidence",
+          "status": "Present",
+          "quality_score": 0.88,
+          "favours": "MERCHANT"
+        },
+        {
+          "evidence_id": "EV-04",
+          "evidence_type": "Merchant Comm Log",
+          "status": "Present",
+          "quality_score": 0.85,
+          "favours": "MERCHANT"
+        }
+      ]
+    },
+    {
+      "case_id": "CAS-202609-030",
+      "dispute_category_id": "CAT-04",
+      "dispute_category_name": "Duplicate Charge",
+      "amount": 450.0,
+      "currency": "INR",
+      "ground_truth_resolution": "CARD_MEMBER_FAVOUR",
+      "expected_confidence_target": 92.0,
+      "evidence_items": [
+        {
+          "evidence_id": "EV-01",
+          "evidence_type": "Transaction Record",
+          "status": "Present",
+          "quality_score": 0.98,
+          "favours": "NEUTRAL"
+        },
+        {
+          "evidence_id": "EV-01_DUP",
+          "evidence_type": "Primary Evidence",
+          "status": "Present",
+          "quality_score": 0.95,
+          "favours": "CARD_MEMBER"
+        },
+        {
+          "evidence_id": "EV-09",
+          "evidence_type": "Dispute Reason Statement",
+          "status": "Present",
+          "quality_score": 0.95,
+          "favours": "CARD_MEMBER"
+        },
+        {
+          "evidence_id": "EV-05",
+          "evidence_type": "CM Communication Log",
+          "status": "Present",
+          "quality_score": 0.9,
+          "favours": "CARD_MEMBER"
+        }
+      ]
+    },
+    {
+      "case_id": "CAS-202609-031",
+      "dispute_category_id": "CAT-04",
+      "dispute_category_name": "Duplicate Charge",
+      "amount": 800.0,
+      "currency": "INR",
+      "ground_truth_resolution": "MERCHANT_FAVOUR",
+      "expected_confidence_target": 94.0,
+      "evidence_items": [
+        {
+          "evidence_id": "EV-01",
+          "evidence_type": "Transaction Record",
+          "status": "Present",
+          "quality_score": 0.99,
+          "favours": "NEUTRAL"
+        },
+        {
+          "evidence_id": "EV-01_DUP",
+          "evidence_type": "Primary Evidence",
+          "status": "Present",
+          "quality_score": 0.98,
+          "favours": "MERCHANT"
+        },
+        {
+          "evidence_id": "EV-02",
+          "evidence_type": "Merchant Receipt",
+          "status": "Present",
+          "quality_score": 0.95,
+          "favours": "MERCHANT"
+        },
+        {
+          "evidence_id": "EV-04",
+          "evidence_type": "Merchant Comm Log",
+          "status": "Present",
+          "quality_score": 0.9,
+          "favours": "MERCHANT"
+        }
+      ]
+    },
+    {
+      "case_id": "CAS-202609-032",
+      "dispute_category_id": "CAT-04",
+      "dispute_category_name": "Duplicate Charge",
+      "amount": 150.0,
+      "currency": "INR",
+      "ground_truth_resolution": "ESCALATE",
+      "expected_confidence_target": 45.0,
+      "evidence_items": [
+        {
+          "evidence_id": "EV-01",
+          "evidence_type": "Transaction Record",
+          "status": "Present",
+          "quality_score": 0.4,
+          "favours": "NEUTRAL"
+        },
+        {
+          "evidence_id": "EV-01_DUP",
+          "evidence_type": "Primary Evidence",
+          "status": "Missing",
+          "quality_score": 0.0,
+          "favours": "NEUTRAL"
+        }
+      ]
+    },
+    {
+      "case_id": "CAS-202609-033",
+      "dispute_category_id": "CAT-05",
+      "dispute_category_name": "Cancelled Subscription",
+      "amount": 200.0,
+      "currency": "INR",
+      "ground_truth_resolution": "CARD_MEMBER_FAVOUR",
+      "expected_confidence_target": 85.0,
+      "evidence_items": [
+        {
+          "evidence_id": "EV-01",
+          "evidence_type": "Transaction Record",
+          "status": "Present",
+          "quality_score": 0.95,
+          "favours": "NEUTRAL"
+        },
+        {
+          "evidence_id": "EV-07",
+          "evidence_type": "Primary Evidence",
+          "status": "Present",
+          "quality_score": 0.95,
+          "favours": "CARD_MEMBER"
+        },
+        {
+          "evidence_id": "EV-09",
+          "evidence_type": "Dispute Reason Statement",
+          "status": "Present",
+          "quality_score": 0.9,
+          "favours": "CARD_MEMBER"
+        }
+      ]
+    },
+    {
+      "case_id": "CAS-202609-034",
+      "dispute_category_id": "CAT-05",
+      "dispute_category_name": "Cancelled Subscription",
+      "amount": 200.0,
+      "currency": "INR",
+      "ground_truth_resolution": "MERCHANT_FAVOUR",
+      "expected_confidence_target": 88.0,
+      "evidence_items": [
+        {
+          "evidence_id": "EV-01",
+          "evidence_type": "Transaction Record",
+          "status": "Present",
+          "quality_score": 0.95,
+          "favours": "NEUTRAL"
+        },
+        {
+          "evidence_id": "EV-07",
+          "evidence_type": "Primary Evidence",
+          "status": "Present",
+          "quality_score": 0.95,
+          "favours": "MERCHANT"
+        },
+        {
+          "evidence_id": "EV-02",
+          "evidence_type": "Merchant Receipt",
+          "status": "Present",
+          "quality_score": 0.9,
+          "favours": "MERCHANT"
+        }
+      ]
+    },
+    {
+      "case_id": "CAS-202609-035",
+      "dispute_category_id": "CAT-05",
+      "dispute_category_name": "Cancelled Subscription",
+      "amount": 500.0,
+      "currency": "INR",
+      "ground_truth_resolution": "ESCALATE",
+      "expected_confidence_target": 40.0,
+      "evidence_items": [
+        {
+          "evidence_id": "EV-01",
+          "evidence_type": "Transaction Record",
+          "status": "Present",
+          "quality_score": 0.5,
+          "favours": "NEUTRAL"
+        },
+        {
+          "evidence_id": "EV-07",
+          "evidence_type": "Primary Evidence",
+          "status": "Missing",
+          "quality_score": 0.0,
+          "favours": "NEUTRAL"
+        },
+        {
+          "evidence_id": "EV-09",
+          "evidence_type": "Dispute Reason Statement",
+          "status": "Present",
+          "quality_score": 0.4,
+          "favours": "CARD_MEMBER"
+        }
+      ]
+    },
+    {
+      "case_id": "CAS-202609-036",
+      "dispute_category_id": "CAT-05",
+      "dispute_category_name": "Cancelled Subscription",
+      "amount": 120.0,
+      "currency": "INR",
+      "ground_truth_resolution": "CARD_MEMBER_FAVOUR",
+      "expected_confidence_target": 75.0,
+      "evidence_items": [
+        {
+          "evidence_id": "EV-01",
+          "evidence_type": "Transaction Record",
+          "status": "Present",
+          "quality_score": 0.9,
+          "favours": "NEUTRAL"
+        },
+        {
+          "evidence_id": "EV-07",
+          "evidence_type": "Primary Evidence",
+          "status": "Present",
+          "quality_score": 0.85,
+          "favours": "CARD_MEMBER"
+        },
+        {
+          "evidence_id": "EV-05",
+          "evidence_type": "CM Communication Log",
+          "status": "Present",
+          "quality_score": 0.8,
+          "favours": "CARD_MEMBER"
+        }
+      ]
+    },
+    {
+      "case_id": "CAS-202609-037",
+      "dispute_category_id": "CAT-05",
+      "dispute_category_name": "Cancelled Subscription",
+      "amount": 300.0,
+      "currency": "INR",
+      "ground_truth_resolution": "MERCHANT_FAVOUR",
+      "expected_confidence_target": 78.0,
+      "evidence_items": [
+        {
+          "evidence_id": "EV-01",
+          "evidence_type": "Transaction Record",
+          "status": "Present",
+          "quality_score": 0.92,
+          "favours": "NEUTRAL"
+        },
+        {
+          "evidence_id": "EV-07",
+          "evidence_type": "Primary Evidence",
+          "status": "Present",
+          "quality_score": 0.88,
+          "favours": "MERCHANT"
+        },
+        {
+          "evidence_id": "EV-04",
+          "evidence_type": "Merchant Comm Log",
+          "status": "Present",
+          "quality_score": 0.85,
+          "favours": "MERCHANT"
+        }
+      ]
+    },
+    {
+      "case_id": "CAS-202609-038",
+      "dispute_category_id": "CAT-05",
+      "dispute_category_name": "Cancelled Subscription",
+      "amount": 450.0,
+      "currency": "INR",
+      "ground_truth_resolution": "CARD_MEMBER_FAVOUR",
+      "expected_confidence_target": 92.0,
+      "evidence_items": [
+        {
+          "evidence_id": "EV-01",
+          "evidence_type": "Transaction Record",
+          "status": "Present",
+          "quality_score": 0.98,
+          "favours": "NEUTRAL"
+        },
+        {
+          "evidence_id": "EV-07",
+          "evidence_type": "Primary Evidence",
+          "status": "Present",
+          "quality_score": 0.95,
+          "favours": "CARD_MEMBER"
+        },
+        {
+          "evidence_id": "EV-09",
+          "evidence_type": "Dispute Reason Statement",
+          "status": "Present",
+          "quality_score": 0.95,
+          "favours": "CARD_MEMBER"
+        },
+        {
+          "evidence_id": "EV-05",
+          "evidence_type": "CM Communication Log",
+          "status": "Present",
+          "quality_score": 0.9,
+          "favours": "CARD_MEMBER"
+        }
+      ]
+    },
+    {
+      "case_id": "CAS-202609-039",
+      "dispute_category_id": "CAT-05",
+      "dispute_category_name": "Cancelled Subscription",
+      "amount": 800.0,
+      "currency": "INR",
+      "ground_truth_resolution": "MERCHANT_FAVOUR",
+      "expected_confidence_target": 94.0,
+      "evidence_items": [
+        {
+          "evidence_id": "EV-01",
+          "evidence_type": "Transaction Record",
+          "status": "Present",
+          "quality_score": 0.99,
+          "favours": "NEUTRAL"
+        },
+        {
+          "evidence_id": "EV-07",
+          "evidence_type": "Primary Evidence",
+          "status": "Present",
+          "quality_score": 0.98,
+          "favours": "MERCHANT"
+        },
+        {
+          "evidence_id": "EV-02",
+          "evidence_type": "Merchant Receipt",
+          "status": "Present",
+          "quality_score": 0.95,
+          "favours": "MERCHANT"
+        },
+        {
+          "evidence_id": "EV-04",
+          "evidence_type": "Merchant Comm Log",
+          "status": "Present",
+          "quality_score": 0.9,
+          "favours": "MERCHANT"
+        }
+      ]
+    },
+    {
+      "case_id": "CAS-202609-040",
+      "dispute_category_id": "CAT-05",
+      "dispute_category_name": "Cancelled Subscription",
+      "amount": 150.0,
+      "currency": "INR",
+      "ground_truth_resolution": "ESCALATE",
+      "expected_confidence_target": 45.0,
+      "evidence_items": [
+        {
+          "evidence_id": "EV-01",
+          "evidence_type": "Transaction Record",
+          "status": "Present",
+          "quality_score": 0.4,
+          "favours": "NEUTRAL"
+        },
+        {
+          "evidence_id": "EV-07",
+          "evidence_type": "Primary Evidence",
+          "status": "Missing",
+          "quality_score": 0.0,
+          "favours": "NEUTRAL"
+        }
+      ]
+    },
+    {
+      "case_id": "CAS-202609-041",
+      "dispute_category_id": "CAT-06",
+      "dispute_category_name": "Refund Not Processed",
+      "amount": 200.0,
+      "currency": "INR",
+      "ground_truth_resolution": "CARD_MEMBER_FAVOUR",
+      "expected_confidence_target": 85.0,
+      "evidence_items": [
+        {
+          "evidence_id": "EV-01",
+          "evidence_type": "Transaction Record",
+          "status": "Present",
+          "quality_score": 0.95,
+          "favours": "NEUTRAL"
+        },
+        {
+          "evidence_id": "EV-07",
+          "evidence_type": "Primary Evidence",
+          "status": "Present",
+          "quality_score": 0.95,
+          "favours": "CARD_MEMBER"
+        },
+        {
+          "evidence_id": "EV-09",
+          "evidence_type": "Dispute Reason Statement",
+          "status": "Present",
+          "quality_score": 0.9,
+          "favours": "CARD_MEMBER"
+        }
+      ]
+    },
+    {
+      "case_id": "CAS-202609-042",
+      "dispute_category_id": "CAT-06",
+      "dispute_category_name": "Refund Not Processed",
+      "amount": 200.0,
+      "currency": "INR",
+      "ground_truth_resolution": "MERCHANT_FAVOUR",
+      "expected_confidence_target": 88.0,
+      "evidence_items": [
+        {
+          "evidence_id": "EV-01",
+          "evidence_type": "Transaction Record",
+          "status": "Present",
+          "quality_score": 0.95,
+          "favours": "NEUTRAL"
+        },
+        {
+          "evidence_id": "EV-07",
+          "evidence_type": "Primary Evidence",
+          "status": "Present",
+          "quality_score": 0.95,
+          "favours": "MERCHANT"
+        },
+        {
+          "evidence_id": "EV-02",
+          "evidence_type": "Merchant Receipt",
+          "status": "Present",
+          "quality_score": 0.9,
+          "favours": "MERCHANT"
+        }
+      ]
+    },
+    {
+      "case_id": "CAS-202609-043",
+      "dispute_category_id": "CAT-06",
+      "dispute_category_name": "Refund Not Processed",
+      "amount": 500.0,
+      "currency": "INR",
+      "ground_truth_resolution": "ESCALATE",
+      "expected_confidence_target": 40.0,
+      "evidence_items": [
+        {
+          "evidence_id": "EV-01",
+          "evidence_type": "Transaction Record",
+          "status": "Present",
+          "quality_score": 0.5,
+          "favours": "NEUTRAL"
+        },
+        {
+          "evidence_id": "EV-07",
+          "evidence_type": "Primary Evidence",
+          "status": "Missing",
+          "quality_score": 0.0,
+          "favours": "NEUTRAL"
+        },
+        {
+          "evidence_id": "EV-09",
+          "evidence_type": "Dispute Reason Statement",
+          "status": "Present",
+          "quality_score": 0.4,
+          "favours": "CARD_MEMBER"
+        }
+      ]
+    },
+    {
+      "case_id": "CAS-202609-044",
+      "dispute_category_id": "CAT-06",
+      "dispute_category_name": "Refund Not Processed",
+      "amount": 120.0,
+      "currency": "INR",
+      "ground_truth_resolution": "CARD_MEMBER_FAVOUR",
+      "expected_confidence_target": 75.0,
+      "evidence_items": [
+        {
+          "evidence_id": "EV-01",
+          "evidence_type": "Transaction Record",
+          "status": "Present",
+          "quality_score": 0.9,
+          "favours": "NEUTRAL"
+        },
+        {
+          "evidence_id": "EV-07",
+          "evidence_type": "Primary Evidence",
+          "status": "Present",
+          "quality_score": 0.85,
+          "favours": "CARD_MEMBER"
+        },
+        {
+          "evidence_id": "EV-05",
+          "evidence_type": "CM Communication Log",
+          "status": "Present",
+          "quality_score": 0.8,
+          "favours": "CARD_MEMBER"
+        }
+      ]
+    },
+    {
+      "case_id": "CAS-202609-045",
+      "dispute_category_id": "CAT-06",
+      "dispute_category_name": "Refund Not Processed",
+      "amount": 300.0,
+      "currency": "INR",
+      "ground_truth_resolution": "MERCHANT_FAVOUR",
+      "expected_confidence_target": 78.0,
+      "evidence_items": [
+        {
+          "evidence_id": "EV-01",
+          "evidence_type": "Transaction Record",
+          "status": "Present",
+          "quality_score": 0.92,
+          "favours": "NEUTRAL"
+        },
+        {
+          "evidence_id": "EV-07",
+          "evidence_type": "Primary Evidence",
+          "status": "Present",
+          "quality_score": 0.88,
+          "favours": "MERCHANT"
+        },
+        {
+          "evidence_id": "EV-04",
+          "evidence_type": "Merchant Comm Log",
+          "status": "Present",
+          "quality_score": 0.85,
+          "favours": "MERCHANT"
+        }
+      ]
+    },
+    {
+      "case_id": "CAS-202609-046",
+      "dispute_category_id": "CAT-06",
+      "dispute_category_name": "Refund Not Processed",
+      "amount": 450.0,
+      "currency": "INR",
+      "ground_truth_resolution": "CARD_MEMBER_FAVOUR",
+      "expected_confidence_target": 92.0,
+      "evidence_items": [
+        {
+          "evidence_id": "EV-01",
+          "evidence_type": "Transaction Record",
+          "status": "Present",
+          "quality_score": 0.98,
+          "favours": "NEUTRAL"
+        },
+        {
+          "evidence_id": "EV-07",
+          "evidence_type": "Primary Evidence",
+          "status": "Present",
+          "quality_score": 0.95,
+          "favours": "CARD_MEMBER"
+        },
+        {
+          "evidence_id": "EV-09",
+          "evidence_type": "Dispute Reason Statement",
+          "status": "Present",
+          "quality_score": 0.95,
+          "favours": "CARD_MEMBER"
+        },
+        {
+          "evidence_id": "EV-05",
+          "evidence_type": "CM Communication Log",
+          "status": "Present",
+          "quality_score": 0.9,
+          "favours": "CARD_MEMBER"
+        }
+      ]
+    },
+    {
+      "case_id": "CAS-202609-047",
+      "dispute_category_id": "CAT-06",
+      "dispute_category_name": "Refund Not Processed",
+      "amount": 800.0,
+      "currency": "INR",
+      "ground_truth_resolution": "MERCHANT_FAVOUR",
+      "expected_confidence_target": 94.0,
+      "evidence_items": [
+        {
+          "evidence_id": "EV-01",
+          "evidence_type": "Transaction Record",
+          "status": "Present",
+          "quality_score": 0.99,
+          "favours": "NEUTRAL"
+        },
+        {
+          "evidence_id": "EV-07",
+          "evidence_type": "Primary Evidence",
+          "status": "Present",
+          "quality_score": 0.98,
+          "favours": "MERCHANT"
+        },
+        {
+          "evidence_id": "EV-02",
+          "evidence_type": "Merchant Receipt",
+          "status": "Present",
+          "quality_score": 0.95,
+          "favours": "MERCHANT"
+        },
+        {
+          "evidence_id": "EV-04",
+          "evidence_type": "Merchant Comm Log",
+          "status": "Present",
+          "quality_score": 0.9,
+          "favours": "MERCHANT"
+        }
+      ]
+    },
+    {
+      "case_id": "CAS-202609-048",
+      "dispute_category_id": "CAT-06",
+      "dispute_category_name": "Refund Not Processed",
+      "amount": 150.0,
+      "currency": "INR",
+      "ground_truth_resolution": "ESCALATE",
+      "expected_confidence_target": 45.0,
+      "evidence_items": [
+        {
+          "evidence_id": "EV-01",
+          "evidence_type": "Transaction Record",
+          "status": "Present",
+          "quality_score": 0.4,
+          "favours": "NEUTRAL"
+        },
+        {
+          "evidence_id": "EV-07",
+          "evidence_type": "Primary Evidence",
+          "status": "Missing",
+          "quality_score": 0.0,
+          "favours": "NEUTRAL"
+        }
+      ]
+    },
+    {
+      "case_id": "CAS-202609-049",
+      "dispute_category_id": "CAT-07",
+      "dispute_category_name": "Service Not Rendered",
+      "amount": 200.0,
+      "currency": "INR",
+      "ground_truth_resolution": "CARD_MEMBER_FAVOUR",
+      "expected_confidence_target": 85.0,
+      "evidence_items": [
+        {
+          "evidence_id": "EV-01",
+          "evidence_type": "Transaction Record",
+          "status": "Present",
+          "quality_score": 0.95,
+          "favours": "NEUTRAL"
+        },
+        {
+          "evidence_id": "EV-04",
+          "evidence_type": "Primary Evidence",
+          "status": "Present",
+          "quality_score": 0.95,
+          "favours": "CARD_MEMBER"
+        },
+        {
+          "evidence_id": "EV-09",
+          "evidence_type": "Dispute Reason Statement",
+          "status": "Present",
+          "quality_score": 0.9,
+          "favours": "CARD_MEMBER"
+        }
+      ]
+    },
+    {
+      "case_id": "CAS-202609-050",
+      "dispute_category_id": "CAT-07",
+      "dispute_category_name": "Service Not Rendered",
+      "amount": 200.0,
+      "currency": "INR",
+      "ground_truth_resolution": "MERCHANT_FAVOUR",
+      "expected_confidence_target": 88.0,
+      "evidence_items": [
+        {
+          "evidence_id": "EV-01",
+          "evidence_type": "Transaction Record",
+          "status": "Present",
+          "quality_score": 0.95,
+          "favours": "NEUTRAL"
+        },
+        {
+          "evidence_id": "EV-04",
+          "evidence_type": "Primary Evidence",
+          "status": "Present",
+          "quality_score": 0.95,
+          "favours": "MERCHANT"
+        },
+        {
+          "evidence_id": "EV-02",
+          "evidence_type": "Merchant Receipt",
+          "status": "Present",
+          "quality_score": 0.9,
+          "favours": "MERCHANT"
+        }
+      ]
+    },
+    {
+      "case_id": "CAS-202609-051",
+      "dispute_category_id": "CAT-07",
+      "dispute_category_name": "Service Not Rendered",
+      "amount": 500.0,
+      "currency": "INR",
+      "ground_truth_resolution": "ESCALATE",
+      "expected_confidence_target": 40.0,
+      "evidence_items": [
+        {
+          "evidence_id": "EV-01",
+          "evidence_type": "Transaction Record",
+          "status": "Present",
+          "quality_score": 0.5,
+          "favours": "NEUTRAL"
+        },
+        {
+          "evidence_id": "EV-04",
+          "evidence_type": "Primary Evidence",
+          "status": "Missing",
+          "quality_score": 0.0,
+          "favours": "NEUTRAL"
+        },
+        {
+          "evidence_id": "EV-09",
+          "evidence_type": "Dispute Reason Statement",
+          "status": "Present",
+          "quality_score": 0.4,
+          "favours": "CARD_MEMBER"
+        }
+      ]
+    },
+    {
+      "case_id": "CAS-202609-052",
+      "dispute_category_id": "CAT-07",
+      "dispute_category_name": "Service Not Rendered",
+      "amount": 120.0,
+      "currency": "INR",
+      "ground_truth_resolution": "CARD_MEMBER_FAVOUR",
+      "expected_confidence_target": 75.0,
+      "evidence_items": [
+        {
+          "evidence_id": "EV-01",
+          "evidence_type": "Transaction Record",
+          "status": "Present",
+          "quality_score": 0.9,
+          "favours": "NEUTRAL"
+        },
+        {
+          "evidence_id": "EV-04",
+          "evidence_type": "Primary Evidence",
+          "status": "Present",
+          "quality_score": 0.85,
+          "favours": "CARD_MEMBER"
+        },
+        {
+          "evidence_id": "EV-05",
+          "evidence_type": "CM Communication Log",
+          "status": "Present",
+          "quality_score": 0.8,
+          "favours": "CARD_MEMBER"
+        }
+      ]
+    },
+    {
+      "case_id": "CAS-202609-053",
+      "dispute_category_id": "CAT-07",
+      "dispute_category_name": "Service Not Rendered",
+      "amount": 300.0,
+      "currency": "INR",
+      "ground_truth_resolution": "MERCHANT_FAVOUR",
+      "expected_confidence_target": 78.0,
+      "evidence_items": [
+        {
+          "evidence_id": "EV-01",
+          "evidence_type": "Transaction Record",
+          "status": "Present",
+          "quality_score": 0.92,
+          "favours": "NEUTRAL"
+        },
+        {
+          "evidence_id": "EV-04",
+          "evidence_type": "Primary Evidence",
+          "status": "Present",
+          "quality_score": 0.88,
+          "favours": "MERCHANT"
+        },
+        {
+          "evidence_id": "EV-04",
+          "evidence_type": "Merchant Comm Log",
+          "status": "Present",
+          "quality_score": 0.85,
+          "favours": "MERCHANT"
+        }
+      ]
+    },
+    {
+      "case_id": "CAS-202609-054",
+      "dispute_category_id": "CAT-07",
+      "dispute_category_name": "Service Not Rendered",
+      "amount": 450.0,
+      "currency": "INR",
+      "ground_truth_resolution": "CARD_MEMBER_FAVOUR",
+      "expected_confidence_target": 92.0,
+      "evidence_items": [
+        {
+          "evidence_id": "EV-01",
+          "evidence_type": "Transaction Record",
+          "status": "Present",
+          "quality_score": 0.98,
+          "favours": "NEUTRAL"
+        },
+        {
+          "evidence_id": "EV-04",
+          "evidence_type": "Primary Evidence",
+          "status": "Present",
+          "quality_score": 0.95,
+          "favours": "CARD_MEMBER"
+        },
+        {
+          "evidence_id": "EV-09",
+          "evidence_type": "Dispute Reason Statement",
+          "status": "Present",
+          "quality_score": 0.95,
+          "favours": "CARD_MEMBER"
+        },
+        {
+          "evidence_id": "EV-05",
+          "evidence_type": "CM Communication Log",
+          "status": "Present",
+          "quality_score": 0.9,
+          "favours": "CARD_MEMBER"
+        }
+      ]
+    },
+    {
+      "case_id": "CAS-202609-055",
+      "dispute_category_id": "CAT-07",
+      "dispute_category_name": "Service Not Rendered",
+      "amount": 800.0,
+      "currency": "INR",
+      "ground_truth_resolution": "MERCHANT_FAVOUR",
+      "expected_confidence_target": 94.0,
+      "evidence_items": [
+        {
+          "evidence_id": "EV-01",
+          "evidence_type": "Transaction Record",
+          "status": "Present",
+          "quality_score": 0.99,
+          "favours": "NEUTRAL"
+        },
+        {
+          "evidence_id": "EV-04",
+          "evidence_type": "Primary Evidence",
+          "status": "Present",
+          "quality_score": 0.98,
+          "favours": "MERCHANT"
+        },
+        {
+          "evidence_id": "EV-02",
+          "evidence_type": "Merchant Receipt",
+          "status": "Present",
+          "quality_score": 0.95,
+          "favours": "MERCHANT"
+        },
+        {
+          "evidence_id": "EV-04",
+          "evidence_type": "Merchant Comm Log",
+          "status": "Present",
+          "quality_score": 0.9,
+          "favours": "MERCHANT"
+        }
+      ]
+    },
+    {
+      "case_id": "CAS-202609-056",
+      "dispute_category_id": "CAT-07",
+      "dispute_category_name": "Service Not Rendered",
+      "amount": 150.0,
+      "currency": "INR",
+      "ground_truth_resolution": "ESCALATE",
+      "expected_confidence_target": 45.0,
+      "evidence_items": [
+        {
+          "evidence_id": "EV-01",
+          "evidence_type": "Transaction Record",
+          "status": "Present",
+          "quality_score": 0.4,
+          "favours": "NEUTRAL"
+        },
+        {
+          "evidence_id": "EV-04",
+          "evidence_type": "Primary Evidence",
+          "status": "Missing",
+          "quality_score": 0.0,
+          "favours": "NEUTRAL"
+        }
+      ]
+    }
+  ]
+}
