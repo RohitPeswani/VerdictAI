@@ -1,0 +1,517 @@
+{
+  "validation_timestamp": "2026-08-24T22:54:10Z",
+  "metrics": {
+    "total_cases": 56,
+    "accuracy_pct": 100.0,
+    "false_positive_rate_pct": 0.0,
+    "escalation_rate_pct": 25.0,
+    "avg_latency_ms": 0.01,
+    "nfr_14_compliant": true
+  },
+  "details": [
+    {
+      "case_id": "CAS-202609-001",
+      "category": "CAT-01",
+      "ground_truth": "CARD_MEMBER_FAVOUR",
+      "predicted": "CARD_MEMBER_FAVOUR",
+      "confidence": 83.3,
+      "is_correct": true,
+      "latency_ms": 0.04
+    },
+    {
+      "case_id": "CAS-202609-002",
+      "category": "CAT-01",
+      "ground_truth": "MERCHANT_FAVOUR",
+      "predicted": "MERCHANT_FAVOUR",
+      "confidence": 84.3,
+      "is_correct": true,
+      "latency_ms": 0.02
+    },
+    {
+      "case_id": "CAS-202609-003",
+      "category": "CAT-01",
+      "ground_truth": "ESCALATE",
+      "predicted": "ESCALATE",
+      "confidence": 43.3,
+      "is_correct": true,
+      "latency_ms": 0.02
+    },
+    {
+      "case_id": "CAS-202609-004",
+      "category": "CAT-01",
+      "ground_truth": "CARD_MEMBER_FAVOUR",
+      "predicted": "CARD_MEMBER_FAVOUR",
+      "confidence": 83.1,
+      "is_correct": true,
+      "latency_ms": 0.01
+    },
+    {
+      "case_id": "CAS-202609-005",
+      "category": "CAT-01",
+      "ground_truth": "MERCHANT_FAVOUR",
+      "predicted": "MERCHANT_FAVOUR",
+      "confidence": 83.3,
+      "is_correct": true,
+      "latency_ms": 0.01
+    },
+    {
+      "case_id": "CAS-202609-006",
+      "category": "CAT-01",
+      "ground_truth": "CARD_MEMBER_FAVOUR",
+      "predicted": "CARD_MEMBER_FAVOUR",
+      "confidence": 84.7,
+      "is_correct": true,
+      "latency_ms": 0.01
+    },
+    {
+      "case_id": "CAS-202609-007",
+      "category": "CAT-01",
+      "ground_truth": "MERCHANT_FAVOUR",
+      "predicted": "MERCHANT_FAVOUR",
+      "confidence": 85.6,
+      "is_correct": true,
+      "latency_ms": 0.01
+    },
+    {
+      "case_id": "CAS-202609-008",
+      "category": "CAT-01",
+      "ground_truth": "ESCALATE",
+      "predicted": "ESCALATE",
+      "confidence": 35.0,
+      "is_correct": true,
+      "latency_ms": 0.01
+    },
+    {
+      "case_id": "CAS-202609-009",
+      "category": "CAT-02",
+      "ground_truth": "CARD_MEMBER_FAVOUR",
+      "predicted": "CARD_MEMBER_FAVOUR",
+      "confidence": 78.0,
+      "is_correct": true,
+      "latency_ms": 0.01
+    },
+    {
+      "case_id": "CAS-202609-010",
+      "category": "CAT-02",
+      "ground_truth": "MERCHANT_FAVOUR",
+      "predicted": "MERCHANT_FAVOUR",
+      "confidence": 81.2,
+      "is_correct": true,
+      "latency_ms": 0.01
+    },
+    {
+      "case_id": "CAS-202609-011",
+      "category": "CAT-02",
+      "ground_truth": "ESCALATE",
+      "predicted": "ESCALATE",
+      "confidence": 49.3,
+      "is_correct": true,
+      "latency_ms": 0.01
+    },
+    {
+      "case_id": "CAS-202609-012",
+      "category": "CAT-02",
+      "ground_truth": "CARD_MEMBER_FAVOUR",
+      "predicted": "CARD_MEMBER_FAVOUR",
+      "confidence": 77.0,
+      "is_correct": true,
+      "latency_ms": 0.01
+    },
+    {
+      "case_id": "CAS-202609-013",
+      "category": "CAT-02",
+      "ground_truth": "MERCHANT_FAVOUR",
+      "predicted": "MERCHANT_FAVOUR",
+      "confidence": 77.2,
+      "is_correct": true,
+      "latency_ms": 0.01
+    },
+    {
+      "case_id": "CAS-202609-014",
+      "category": "CAT-02",
+      "ground_truth": "CARD_MEMBER_FAVOUR",
+      "predicted": "CARD_MEMBER_FAVOUR",
+      "confidence": 81.4,
+      "is_correct": true,
+      "latency_ms": 0.01
+    },
+    {
+      "case_id": "CAS-202609-015",
+      "category": "CAT-02",
+      "ground_truth": "MERCHANT_FAVOUR",
+      "predicted": "MERCHANT_FAVOUR",
+      "confidence": 83.8,
+      "is_correct": true,
+      "latency_ms": 0.01
+    },
+    {
+      "case_id": "CAS-202609-016",
+      "category": "CAT-02",
+      "ground_truth": "ESCALATE",
+      "predicted": "ESCALATE",
+      "confidence": 35.0,
+      "is_correct": true,
+      "latency_ms": 0.01
+    },
+    {
+      "case_id": "CAS-202609-017",
+      "category": "CAT-03",
+      "ground_truth": "CARD_MEMBER_FAVOUR",
+      "predicted": "CARD_MEMBER_FAVOUR",
+      "confidence": 78.9,
+      "is_correct": true,
+      "latency_ms": 0.01
+    },
+    {
+      "case_id": "CAS-202609-018",
+      "category": "CAT-03",
+      "ground_truth": "MERCHANT_FAVOUR",
+      "predicted": "MERCHANT_FAVOUR",
+      "confidence": 79.6,
+      "is_correct": true,
+      "latency_ms": 0.01
+    },
+    {
+      "case_id": "CAS-202609-019",
+      "category": "CAT-03",
+      "ground_truth": "ESCALATE",
+      "predicted": "ESCALATE",
+      "confidence": 38.7,
+      "is_correct": true,
+      "latency_ms": 0.01
+    },
+    {
+      "case_id": "CAS-202609-020",
+      "category": "CAT-03",
+      "ground_truth": "CARD_MEMBER_FAVOUR",
+      "predicted": "CARD_MEMBER_FAVOUR",
+      "confidence": 80.6,
+      "is_correct": true,
+      "latency_ms": 0.01
+    },
+    {
+      "case_id": "CAS-202609-021",
+      "category": "CAT-03",
+      "ground_truth": "MERCHANT_FAVOUR",
+      "predicted": "MERCHANT_FAVOUR",
+      "confidence": 79.9,
+      "is_correct": true,
+      "latency_ms": 0.01
+    },
+    {
+      "case_id": "CAS-202609-022",
+      "category": "CAT-03",
+      "ground_truth": "CARD_MEMBER_FAVOUR",
+      "predicted": "CARD_MEMBER_FAVOUR",
+      "confidence": 81.6,
+      "is_correct": true,
+      "latency_ms": 0.01
+    },
+    {
+      "case_id": "CAS-202609-023",
+      "category": "CAT-03",
+      "ground_truth": "MERCHANT_FAVOUR",
+      "predicted": "MERCHANT_FAVOUR",
+      "confidence": 81.4,
+      "is_correct": true,
+      "latency_ms": 0.01
+    },
+    {
+      "case_id": "CAS-202609-024",
+      "category": "CAT-03",
+      "ground_truth": "ESCALATE",
+      "predicted": "ESCALATE",
+      "confidence": 35.0,
+      "is_correct": true,
+      "latency_ms": 0.01
+    },
+    {
+      "case_id": "CAS-202609-025",
+      "category": "CAT-04",
+      "ground_truth": "CARD_MEMBER_FAVOUR",
+      "predicted": "CARD_MEMBER_FAVOUR",
+      "confidence": 75.6,
+      "is_correct": true,
+      "latency_ms": 0.01
+    },
+    {
+      "case_id": "CAS-202609-026",
+      "category": "CAT-04",
+      "ground_truth": "MERCHANT_FAVOUR",
+      "predicted": "MERCHANT_FAVOUR",
+      "confidence": 79.4,
+      "is_correct": true,
+      "latency_ms": 0.01
+    },
+    {
+      "case_id": "CAS-202609-027",
+      "category": "CAT-04",
+      "ground_truth": "ESCALATE",
+      "predicted": "ESCALATE",
+      "confidence": 36.9,
+      "is_correct": true,
+      "latency_ms": 0.01
+    },
+    {
+      "case_id": "CAS-202609-028",
+      "category": "CAT-04",
+      "ground_truth": "CARD_MEMBER_FAVOUR",
+      "predicted": "CARD_MEMBER_FAVOUR",
+      "confidence": 75.1,
+      "is_correct": true,
+      "latency_ms": 0.01
+    },
+    {
+      "case_id": "CAS-202609-029",
+      "category": "CAT-04",
+      "ground_truth": "MERCHANT_FAVOUR",
+      "predicted": "MERCHANT_FAVOUR",
+      "confidence": 75.3,
+      "is_correct": true,
+      "latency_ms": 0.01
+    },
+    {
+      "case_id": "CAS-202609-030",
+      "category": "CAT-04",
+      "ground_truth": "CARD_MEMBER_FAVOUR",
+      "predicted": "CARD_MEMBER_FAVOUR",
+      "confidence": 76.0,
+      "is_correct": true,
+      "latency_ms": 0.01
+    },
+    {
+      "case_id": "CAS-202609-031",
+      "category": "CAT-04",
+      "ground_truth": "MERCHANT_FAVOUR",
+      "predicted": "MERCHANT_FAVOUR",
+      "confidence": 79.9,
+      "is_correct": true,
+      "latency_ms": 0.01
+    },
+    {
+      "case_id": "CAS-202609-032",
+      "category": "CAT-04",
+      "ground_truth": "ESCALATE",
+      "predicted": "ESCALATE",
+      "confidence": 35.0,
+      "is_correct": true,
+      "latency_ms": 0.01
+    },
+    {
+      "case_id": "CAS-202609-033",
+      "category": "CAT-05",
+      "ground_truth": "CARD_MEMBER_FAVOUR",
+      "predicted": "CARD_MEMBER_FAVOUR",
+      "confidence": 86.6,
+      "is_correct": true,
+      "latency_ms": 0.01
+    },
+    {
+      "case_id": "CAS-202609-034",
+      "category": "CAT-05",
+      "ground_truth": "MERCHANT_FAVOUR",
+      "predicted": "MERCHANT_FAVOUR",
+      "confidence": 86.4,
+      "is_correct": true,
+      "latency_ms": 0.01
+    },
+    {
+      "case_id": "CAS-202609-035",
+      "category": "CAT-05",
+      "ground_truth": "ESCALATE",
+      "predicted": "ESCALATE",
+      "confidence": 49.3,
+      "is_correct": true,
+      "latency_ms": 0.01
+    },
+    {
+      "case_id": "CAS-202609-036",
+      "category": "CAT-05",
+      "ground_truth": "CARD_MEMBER_FAVOUR",
+      "predicted": "CARD_MEMBER_FAVOUR",
+      "confidence": 88.6,
+      "is_correct": true,
+      "latency_ms": 0.01
+    },
+    {
+      "case_id": "CAS-202609-037",
+      "category": "CAT-05",
+      "ground_truth": "MERCHANT_FAVOUR",
+      "predicted": "MERCHANT_FAVOUR",
+      "confidence": 88.8,
+      "is_correct": true,
+      "latency_ms": 0.01
+    },
+    {
+      "case_id": "CAS-202609-038",
+      "category": "CAT-05",
+      "ground_truth": "CARD_MEMBER_FAVOUR",
+      "predicted": "CARD_MEMBER_FAVOUR",
+      "confidence": 89.9,
+      "is_correct": true,
+      "latency_ms": 0.01
+    },
+    {
+      "case_id": "CAS-202609-039",
+      "category": "CAT-05",
+      "ground_truth": "MERCHANT_FAVOUR",
+      "predicted": "MERCHANT_FAVOUR",
+      "confidence": 89.9,
+      "is_correct": true,
+      "latency_ms": 0.01
+    },
+    {
+      "case_id": "CAS-202609-040",
+      "category": "CAT-05",
+      "ground_truth": "ESCALATE",
+      "predicted": "ESCALATE",
+      "confidence": 35.0,
+      "is_correct": true,
+      "latency_ms": 0.01
+    },
+    {
+      "case_id": "CAS-202609-041",
+      "category": "CAT-06",
+      "ground_truth": "CARD_MEMBER_FAVOUR",
+      "predicted": "CARD_MEMBER_FAVOUR",
+      "confidence": 79.7,
+      "is_correct": true,
+      "latency_ms": 0.01
+    },
+    {
+      "case_id": "CAS-202609-042",
+      "category": "CAT-06",
+      "ground_truth": "MERCHANT_FAVOUR",
+      "predicted": "MERCHANT_FAVOUR",
+      "confidence": 83.3,
+      "is_correct": true,
+      "latency_ms": 0.01
+    },
+    {
+      "case_id": "CAS-202609-043",
+      "category": "CAT-06",
+      "ground_truth": "ESCALATE",
+      "predicted": "ESCALATE",
+      "confidence": 39.5,
+      "is_correct": true,
+      "latency_ms": 0.01
+    },
+    {
+      "case_id": "CAS-202609-044",
+      "category": "CAT-06",
+      "ground_truth": "CARD_MEMBER_FAVOUR",
+      "predicted": "CARD_MEMBER_FAVOUR",
+      "confidence": 80.7,
+      "is_correct": true,
+      "latency_ms": 0.01
+    },
+    {
+      "case_id": "CAS-202609-045",
+      "category": "CAT-06",
+      "ground_truth": "MERCHANT_FAVOUR",
+      "predicted": "MERCHANT_FAVOUR",
+      "confidence": 82.0,
+      "is_correct": true,
+      "latency_ms": 0.01
+    },
+    {
+      "case_id": "CAS-202609-046",
+      "category": "CAT-06",
+      "ground_truth": "CARD_MEMBER_FAVOUR",
+      "predicted": "CARD_MEMBER_FAVOUR",
+      "confidence": 81.8,
+      "is_correct": true,
+      "latency_ms": 0.01
+    },
+    {
+      "case_id": "CAS-202609-047",
+      "category": "CAT-06",
+      "ground_truth": "MERCHANT_FAVOUR",
+      "predicted": "MERCHANT_FAVOUR",
+      "confidence": 85.6,
+      "is_correct": true,
+      "latency_ms": 0.01
+    },
+    {
+      "case_id": "CAS-202609-048",
+      "category": "CAT-06",
+      "ground_truth": "ESCALATE",
+      "predicted": "ESCALATE",
+      "confidence": 35.0,
+      "is_correct": true,
+      "latency_ms": 0.01
+    },
+    {
+      "case_id": "CAS-202609-049",
+      "category": "CAT-07",
+      "ground_truth": "CARD_MEMBER_FAVOUR",
+      "predicted": "CARD_MEMBER_FAVOUR",
+      "confidence": 77.8,
+      "is_correct": true,
+      "latency_ms": 0.01
+    },
+    {
+      "case_id": "CAS-202609-050",
+      "category": "CAT-07",
+      "ground_truth": "MERCHANT_FAVOUR",
+      "predicted": "MERCHANT_FAVOUR",
+      "confidence": 80.0,
+      "is_correct": true,
+      "latency_ms": 0.01
+    },
+    {
+      "case_id": "CAS-202609-051",
+      "category": "CAT-07",
+      "ground_truth": "ESCALATE",
+      "predicted": "ESCALATE",
+      "confidence": 45.5,
+      "is_correct": true,
+      "latency_ms": 0.01
+    },
+    {
+      "case_id": "CAS-202609-052",
+      "category": "CAT-07",
+      "ground_truth": "CARD_MEMBER_FAVOUR",
+      "predicted": "CARD_MEMBER_FAVOUR",
+      "confidence": 80.0,
+      "is_correct": true,
+      "latency_ms": 0.01
+    },
+    {
+      "case_id": "CAS-202609-053",
+      "category": "CAT-07",
+      "ground_truth": "MERCHANT_FAVOUR",
+      "predicted": "MERCHANT_FAVOUR",
+      "confidence": 81.9,
+      "is_correct": true,
+      "latency_ms": 0.01
+    },
+    {
+      "case_id": "CAS-202609-054",
+      "category": "CAT-07",
+      "ground_truth": "CARD_MEMBER_FAVOUR",
+      "predicted": "CARD_MEMBER_FAVOUR",
+      "confidence": 82.6,
+      "is_correct": true,
+      "latency_ms": 0.01
+    },
+    {
+      "case_id": "CAS-202609-055",
+      "category": "CAT-07",
+      "ground_truth": "MERCHANT_FAVOUR",
+      "predicted": "MERCHANT_FAVOUR",
+      "confidence": 85.1,
+      "is_correct": true,
+      "latency_ms": 0.01
+    },
+    {
+      "case_id": "CAS-202609-056",
+      "category": "CAT-07",
+      "ground_truth": "ESCALATE",
+      "predicted": "ESCALATE",
+      "confidence": 35.0,
+      "is_correct": true,
+      "latency_ms": 0.01
+    }
+  ]
+}
