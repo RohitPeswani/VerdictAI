@@ -15,6 +15,7 @@ from backend.app.models.schemas import (
 from backend.app.services.case_builder.builder import CaseFileBuilder
 from backend.app.services.state_machine.state_machine import DisputeStateMachine
 from backend.app.services.audit_engine.audit import audit_engine
+from backend.app.services.parsers import evidence_dispatcher, AnomalyLevel
 from backend.app.core.db import db_manager
 from database.mongodb.models import EvidencePayloadModel, EvidenceType, EvidenceSource, MongoCaseDocument
 
@@ -107,6 +108,40 @@ class CaseService:
         if not dispute_record:
             raise ValueError(f"Dispute {dispute_id} not found.")
 
+        # Automated polymorphic evidence parsing and enrichment
+        parsed_result = evidence_dispatcher.dispatch_and_parse(evidence_type, raw_payload)
+        nlp_entities = {}
+        ocr_text = None
+        confidence_rating = 1.0
+
+        if parsed_result:
+            nlp_entities = parsed_result.to_nlp_entities_dict()
+            confidence_rating = parsed_result.confidence_score
+            ocr_text = parsed_result.raw_text_content
+
+            # Trigger audit log when high or critical anomalies are detected
+            if parsed_result.highest_anomaly_severity in [AnomalyLevel.HIGH, AnomalyLevel.CRITICAL]:
+                audit_engine.log_event(
+                    dispute_id=dispute_id,
+                    performed_by="SYSTEM_EVIDENCE_PIPELINE",
+                    action_type="EVIDENCE_ANOMALY_DETECTED",
+                    previous_state=None,
+                    new_state={
+                        "severity": parsed_result.highest_anomaly_severity.value,
+                        "anomaly_count": len(parsed_result.anomalies)
+                    },
+                    state_delta={
+                        "anomalies": [
+                            {
+                                "type": a.anomaly_type,
+                                "description": a.description,
+                                "severity": a.severity.value
+                            }
+                            for a in parsed_result.anomalies
+                        ]
+                    }
+                )
+
         evidence_id = f"evi_{uuid.uuid4().hex[:12]}"
         evidence = EvidencePayloadModel.create_with_hash(
             evidence_id=evidence_id,
@@ -114,7 +149,10 @@ class CaseService:
             evidence_type=evidence_type,
             source=source,
             raw_payload=raw_payload,
-            file_name=file_name
+            file_name=file_name,
+            nlp_entities=nlp_entities,
+            ocr_text=ocr_text,
+            confidence_rating=confidence_rating
         )
 
         mongo_data = db_manager.get_mongo_doc("case_documents", dispute_id) or {

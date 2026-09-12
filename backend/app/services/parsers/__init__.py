@@ -16,6 +16,7 @@ from backend.app.services.parsers.base_parser import (
 from backend.app.services.parsers.transaction_parser import TransactionParser
 from backend.app.services.parsers.receipt_parser import ReceiptParser
 from backend.app.services.parsers.courier_tracking_parser import CourierTrackingParser
+from backend.app.services.parsers.dispatcher import EvidenceParserDispatcher, evidence_dispatcher
 
 __all__ = [
     # Base
@@ -29,4 +30,8 @@ __all__ = [
     "TransactionParser",
     "ReceiptParser",
     "CourierTrackingParser",
+    # Dispatcher
+    "EvidenceParserDispatcher",
+    "evidence_dispatcher",
 ]
+
