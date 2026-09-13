@@ -1,0 +1,43 @@
+{
+  "expo": {
+    "name": "VerdictAI",
+    "slug": "verdictai-mobile",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "automatic",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#0A0E1A"
+    },
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "com.verdictai.mobile"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#0A0E1A"
+      },
+      "package": "com.verdictai.mobile"
+    },
+    "web": {
+      "favicon": "./assets/favicon.png",
+      "bundler": "metro"
+    },
+    "plugins": [
+      "expo-font",
+      "expo-secure-store",
+      [
+        "expo-notifications",
+        {
+          "color": "#3B82F6"
+        }
+      ]
+    ],
+    "extra": {
+      "apiBaseUrl": "http://localhost:8000/api/v1"
+    }
+  }
+}
