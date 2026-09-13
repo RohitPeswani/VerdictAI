@@ -29,3 +29,9 @@ Thumbs.db
 *.txt
 __pycache__/
 *.pyc
+
+# Node / Mobile
+node_modules/
+.expo/
+dist/
+web-build/
