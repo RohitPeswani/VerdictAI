@@ -210,5 +210,17 @@ class CaseService:
             resolution_data=res_data
         )
 
+    def evaluate_scoring(
+        self,
+        dispute_id: str,
+        actor: str = "SYSTEM:fair_weighing_engine"
+    ) -> UnifiedCaseFile:
+        """
+        Invokes the Fair-Weighing ML scoring pipeline on the assembled case file (Phase 5 Integration).
+        """
+        from backend.app.services.fair_weighing import fair_weighing_service
+        return fair_weighing_service.evaluate_dispute_case(dispute_id=dispute_id, actor=actor)
+
 
 case_service = CaseService()
+

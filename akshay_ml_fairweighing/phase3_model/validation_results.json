@@ -1,5 +1,5 @@
 {
-  "validation_timestamp": "2026-08-24T22:54:10Z",
+  "validation_timestamp": "2026-09-13T23:57:31Z",
   "metrics": {
     "total_cases": 56,
     "accuracy_pct": 100.0,
@@ -16,7 +16,7 @@
       "predicted": "CARD_MEMBER_FAVOUR",
       "confidence": 83.3,
       "is_correct": true,
-      "latency_ms": 0.04
+      "latency_ms": 0.09
     },
     {
       "case_id": "CAS-202609-002",
@@ -25,7 +25,7 @@
       "predicted": "MERCHANT_FAVOUR",
       "confidence": 84.3,
       "is_correct": true,
-      "latency_ms": 0.02
+      "latency_ms": 0.03
     },
     {
       "case_id": "CAS-202609-003",
@@ -358,7 +358,7 @@
       "predicted": "MERCHANT_FAVOUR",
       "confidence": 89.9,
       "is_correct": true,
-      "latency_ms": 0.01
+      "latency_ms": 0.02
     },
     {
       "case_id": "CAS-202609-040",
