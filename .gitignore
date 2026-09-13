@@ -25,13 +25,18 @@ Thumbs.db
 .vscode/
 .idea/
 
+# Documents, Reports & Documentation
 *.pdf
 *.txt
-__pycache__/
-*.pyc
+*.docx
+*.doc
+*.tex
+*.csv
+docs/
 
 # Node / Mobile
 node_modules/
 .expo/
 dist/
 web-build/
+
