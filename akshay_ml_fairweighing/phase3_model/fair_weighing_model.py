@@ -61,9 +61,10 @@ class FairWeighingModel:
             try:
                 import google.generativeai as genai
                 genai.configure(api_key=self.api_key)
-                self.model = genai.GenerativeModel('gemini-3.6-flash')
+                model_name = os.environ.get("GEMINI_MODEL", "gemini-1.5-flash")
+                self.model = genai.GenerativeModel(model_name)
                 self.gemini_available = True
-                logger.info("Google Gemini API client initialized successfully.")
+                logger.info(f"Google Gemini API client initialized with {model_name}.")
             except Exception as e:
                 logger.warning(f"Could not initialize Gemini API: {e}. Falling back to template explanation generator.")
 

@@ -23,6 +23,7 @@ from backend.app.services.state_machine.state_machine import (
     InvalidStateTransitionError
 )
 from backend.app.services.audit_engine.audit import audit_engine
+from backend.app.services.fair_weighing import fair_weighing_service
 from backend.app.core.db import db_manager
 
 router = APIRouter(prefix="/disputes", tags=["Disputes"])
@@ -213,3 +214,64 @@ async def get_dispute_audit_trail(dispute_id: str):
         "total_events": len(trail),
         "audit_logs": trail
     }
+
+
+@router.post(
+    "/{dispute_id}/score",
+    response_model=UnifiedCaseFile,
+    summary="Evaluate dispute using Fair-Weighing ML Model (SIR-07, FR-15, UC-03)"
+)
+async def score_dispute(
+    dispute_id: str,
+    actor: str = Query("SYSTEM:fair_weighing_engine", description="Identity of the actor triggering the evaluation")
+):
+    """
+    Synchronous ML inference endpoint per SRS SIR-07 and UC-03.
+    Evaluates evidence against the calibrated category rubric, produces confidence score,
+    recommendation, and plain-language explanation, automatically advances lifecycle state,
+    persists resolution, and logs model version and factor weights in the audit chain.
+    """
+    dispute_rec = db_manager.get_pg_record("disputes", dispute_id)
+    if not dispute_rec:
+        raise HTTPException(
+            status_code=status.HTTP_404_NOT_FOUND,
+            detail=f"Dispute with ID '{dispute_id}' not found."
+        )
+
+    try:
+        updated_case_file = fair_weighing_service.evaluate_dispute_case(
+            dispute_id=dispute_id,
+            actor=actor
+        )
+        return updated_case_file
+    except Exception as e:
+        raise HTTPException(
+            status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
+            detail=f"Fair-weighing scoring evaluation failed: {str(e)}"
+        )
+
+
+@router.get(
+    "/{dispute_id}/resolution",
+    summary="Get AI scoring resolution details (FR-18, FR-21)"
+)
+async def get_dispute_resolution(dispute_id: str):
+    """
+    Retrieves the persisted resolution record, factor breakdown, and justification summary.
+    """
+    dispute_rec = db_manager.get_pg_record("disputes", dispute_id)
+    if not dispute_rec:
+        raise HTTPException(
+            status_code=status.HTTP_404_NOT_FOUND,
+            detail=f"Dispute with ID '{dispute_id}' not found."
+        )
+
+    resolution_rec = db_manager.get_pg_record("dispute_resolutions", dispute_id)
+    if not resolution_rec:
+        raise HTTPException(
+            status_code=status.HTTP_404_NOT_FOUND,
+            detail=f"Resolution has not been evaluated yet for dispute '{dispute_id}'."
+        )
+
+    return resolution_rec
+
